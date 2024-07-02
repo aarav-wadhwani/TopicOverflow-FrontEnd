@@ -1,0 +1,164 @@
+/* Reset default browser styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Global styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    text-align: center;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #006831;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ffcc00; /* Change to your preferred hover color */
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+form {
+    margin-bottom: 20px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input, form select, form downloadPdfdownloadPdfButton {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form select[multiple] {
+    height: auto;
+}
+
+footer {
+    background-color: #006831;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.btn {
+    border: none;
+    width: 15em;
+    height: 5em;
+    border-radius: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    background: #1C1A1C;
+    cursor: pointer;
+    transition: all 450ms ease-in-out;
+    margin: auto
+  }
+  
+  .sparkle {
+    fill: #AAAAAA;
+    transition: all 800ms ease;
+  }
+  
+  .text {
+    font-weight: 600;
+    color: #AAAAAA;
+    font-size: medium;
+  }
+  
+  .btn:hover {
+    background: linear-gradient(0deg,#7cf3aa,#3fea8c);
+    box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.4),
+    inset 0px -4px 0px 0px rgba(0, 0, 0, 0.2),
+    0px 0px 0px 4px rgba(255, 255, 255, 0.2),
+    0px 0px 180px 0px #17ff78;
+    transform: translateY(-2px);
+  }
+  
+  .btn:hover .text {
+    color: white;
+  }
+  
+  .btn:hover .sparkle {
+    fill: white;
+    transform: scale(1.2);
+  }
+
+
+  .downloadPdfButton {
+    position: relative;
+    overflow: hidden;
+    height: 3rem;
+    padding: 0 2rem;
+    border-radius: 1.5rem;
+    background: #3d3a4e;
+    background-size: 400%;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .downloadPdfButton:hover::before {
+    transform: scaleX(1);
+  }
+  
+  .downloadPdfButton-content {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .downloadPdfButton::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: 0 50%;
+    width: 100%;
+    height: inherit;
+    border-radius: inherit;
+    background: linear-gradient(
+      82.3deg,
+      rgba(150, 93, 233, 1) 10.8%,
+      rgba(99, 88, 238, 1) 94.3%
+    );
+    transition: all 0.475s;
+  }
