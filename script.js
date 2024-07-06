@@ -1,15 +1,19 @@
 const courses = {
+    'Math 120': {
+        professors: ['Dr. Camacho', 'Dr. Bekyel'],
+        topics: ['Algebra', 'Trigonometry', 'Precalculus']
+    },
     'Math 124': {
         professors: ['Dr. Camacho', 'Dr. Ostroff'],
-        topics: ['Limits', 'Derivatives', 'Applications of Derivatives']
+        topics: ['Limits', 'Derivative Rules', 'Parametric Equations', 'Optimization', 'Related Rates', 'L\'Hopitals Rule', 'Linear Approximation', 'Maximum and Minumum Values', 'Curve Sketching']
     },
     'Math 125': {
         professors: ['Dr. Burdzy', 'Dr. Loveless'],
-        topics: ['Integration', 'Volume', 'Applications of Integration']
+        topics: ['Anti-Derivatives', 'Reimann Sums', 'Definite Integrals', 'Fundamental Theorem of Calculus', 'Applications of Integration (Area, Volume, Work, Average Value)', 'Techniques of Integration', 'Arc Length', 'Centre of Mass', 'Differential Equations']
     },
     'Math 126': {
         professors: ['Dr. Loveless', 'Dr. Ostroff'],
-        topics: ["Vectors", "3D Shapes", "Lines and Planes", "Vector Calculus"]
+        topics: ["Vectors", "3D Shapes / Curves", "Lines and Planes", "Vector Functions", "Partial Derivatives", "Double Integrals", "Applications of Double Integrals", "Taylor Series"]
     }
 };
 
