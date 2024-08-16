@@ -1,0 +1,45 @@
+<!-- templates/signup.html -->
+{% extends "base.html" %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<h2>Sign Up</h2>
+<head>
+    <link rel="stylesheet" href="/static/authStyles.css">
+</head>
+<div class="container">
+    <div class="heading">Sign Up for Questra</div>
+    <form class="form" action="/signup" method="post">
+        <input required="" class="input" type="text" name="first_name" id="first_name" placeholder="First Name">
+        <input required="" class="input" type="text" name="last_name" id="last_name" placeholder="Last Name">
+        <input required="" class="input" type="email" name="email" id="email" placeholder="E-mail">
+        
+        <select required="" class="input" name="educational_institution" id="educational_institution"  onchange="showOtherInstitution()">
+            <option value=""  disabled selected>Select Your Institution</option>
+            <option value="University of Washington">University of Washington</option>
+            <option value="Other">Other</option>
+            <!-- Add more options as needed -->
+        </select>
+        <input class="input" type="text" name="other_institution" id="other_institution" placeholder="Please Specify Your Institution" style="display: none;">
+        
+        <input required="" class="input" type="number" name="expected_graduation_year" id="expected_graduation_year" placeholder="Expected Year of Graduation">
+        <input required="" class="input" type="password" name="password" id="password" placeholder="Password">
+        <input class="submit-button" type="submit" value="Sign Up">
+    </form>
+</div>
+
+<script>
+    function showOtherInstitution() {
+        const selectElement = document.getElementById('educational_institution');
+        const otherInstitutionInput = document.getElementById('other_institution');
+        if (selectElement.value === "Other") {
+            otherInstitutionInput.style.display = 'block';
+            otherInstitutionInput.required = true;
+        } else {
+            otherInstitutionInput.style.display = 'none';
+            otherInstitutionInput.required = false;
+        }
+    }
+</script>
+
+{% endblock %}

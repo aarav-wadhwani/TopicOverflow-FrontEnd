@@ -1,7 +1,7 @@
 const courses = {
     'Math 120': {
         professors: ['Dr. Camacho', 'Dr. Bekyel'],
-        topics: ['Algebra', 'Trigonometry', 'Precalculus']
+        topics: ['Unit Conversion', 'Coordinate Systems', 'Distance Formula', 'Lines and Circles', 'Intersections', 'Uniform Linear Motion and Parametric Equations', 'Functions and Graphs', 'Quadratic Functions and Optimization', 'Inverse Functions', 'Exponential Functions and Logarithms', 'Shifting, Filation, and Reflection', 'Rational Functions', 'Circular Motion', 'Trigonometry', 'Inverse Trigonometric Functions', 'Sinusoidal Equations and Modeling']
     },
     'Math 124': {
         professors: ['Dr. Camacho', 'Dr. Ostroff'],
